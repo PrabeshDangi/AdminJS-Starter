@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint \"src\"",
+    "start": "dotenv -c '.env' -- node dist/app",
+    "dev": "tsc-watch --onSuccess \"npm start\""
+  },
+  "dependencies": {
+    "@adminjs/express": "^6.1.0",
+    "@adminjs/prisma": "^5.0.1",
+    "@prisma/client": "^5.6.0",
+    "@types/bcrypt": "^5.0.2",
+    "adminjs": "^7.7.2",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-formidable": "^1.2.0",
+    "express-rate-limit": "^7.4.0",
+    "express-session": "^1.17.3",
+    "mongodb": "latest",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.58.0",
+    "@typescript-eslint/parser": "^5.58.0",
+    "dotenv-cli": "^7.2.1",
+    "eslint": "^8.38.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.1.0",
+    "prisma": "^5.6.0",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.2.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "name": "expressadmin",
+  "prisma": {
+    "schema": "prisma/schema.prisma"
+  }
+}

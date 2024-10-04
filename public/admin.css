@@ -1,0 +1,11 @@
+.AdminJS_logo {
+    max-width: 150px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+.AdminJS_logo img {
+    width: 100%; 
+    height: auto; 
+}
